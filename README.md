@@ -25,7 +25,7 @@ This repository contains a synthetic time series dataset specifically designed f
 
 ### Time Series with Anomalies
 
-![Synthetic Time Series Visualization](synthetic_timeseries_visualization.png)
+![Synthetic Time Series Visualization](img/synthetic_timeseries_visualization.png)
 
 The visualization above shows:
 - **Panel 1**: Main sensor signal comparing normal vs. anomalous behavior
@@ -37,7 +37,7 @@ Red points indicate detected anomalies across all sensor channels.
 
 ### Statistical Analysis
 
-![Statistical Analysis](synthetic_timeseries_statistics.png)
+![Statistical Analysis](img/synthetic_timeseries_statistics.png)
 
 Comprehensive statistical analysis including:
 - **Anomaly Distribution**: Label balance for classification tasks
