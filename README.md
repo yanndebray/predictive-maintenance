@@ -234,6 +234,66 @@ num_drifts = 2;          % Number of drift anomalies
 
 ---
 
+## 🧪 Comprehensive Anomaly Detection Analysis
+
+### Detection Method Comparison
+
+We implemented and compared 6 different anomaly detection approaches:
+
+![Anomaly Detection Comparison](img/anomaly_detection_comparison.png)
+
+#### Methods Tested:
+1. **Z-Score Analysis** - Statistical threshold based on standard deviations
+2. **Isolation Forest** - Tree-based anomaly isolation algorithm
+3. **One-Class SVM** - Support vector machine for novelty detection
+4. **PCA Reconstruction** - Principal component analysis with reconstruction error
+5. **Prediction Error** - Time series forecasting residuals
+6. **Ensemble Method** - Majority voting across all methods
+
+### Performance Metrics
+
+![Performance Metrics](img/performance_metrics_comparison.png)
+
+| Method | Precision | Recall | F1-Score |
+|--------|-----------|--------|----------|
+| Z-Score | 0.0143 | 0.0054 | 0.0078 |
+| Isolation Forest | 0.0103 | 0.1083 | 0.0188 |
+| One-Class SVM | 0.0108 | 0.0064 | 0.0081 |
+| PCA Reconstruction | 0.0085 | 0.0021 | 0.0034 |
+| **Prediction Error** | **0.0775** | **0.1496** | **0.1021** ⭐ |
+| Ensemble | 0.0199 | 0.0059 | 0.0091 |
+
+**Best Performer:** Prediction Error method achieved the highest F1-score (0.1021), demonstrating that time series forecasting approaches are particularly effective for this type of sequential anomaly detection.
+
+### Confusion Matrices
+
+![Confusion Matrices](img/confusion_matrices.png)
+
+Detailed confusion matrices for all six methods, showing true positives, false positives, true negatives, and false negatives for each approach.
+
+### Score Distributions
+
+![Score Distributions](img/score_distributions.png)
+
+Distribution analysis of anomaly scores for Z-Score, Reconstruction Error, and Prediction Error methods, showing the separation between normal and anomalous samples.
+
+### Running the Analysis
+
+```matlab
+% Run comprehensive analysis
+analyze_timeseries_anomalies
+
+% This will:
+% - Load the synthetic dataset
+% - Extract features (rolling statistics, derivatives)
+% - Train 5 different anomaly detection models
+% - Create ensemble predictions
+% - Generate performance visualizations
+% - Save 4 analysis plots
+```
+
+---
+
 ## 📚 Citation
 
 If you use this dataset in your research, please cite:
@@ -279,9 +339,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or collaborations:
 
-- 📧 Email: your.email@example.com
-- 🐦 Twitter: @yourhandle
-- 💼 LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
+- 💼 LinkedIn: [Yann Debray](https://linkedin.com/in/yanndebray)
 
 ---
 

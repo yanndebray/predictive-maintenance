@@ -247,3 +247,6 @@ function s = randsign(varargin)
         s = 2 * (rand(varargin{:}) > 0.5) - 1;
     end
 end
+
+fprintf('Statistics report generated successfully!\n');
+
